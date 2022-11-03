@@ -31,6 +31,12 @@ const productData = [
     stock: 22,
     categoryId: 2,
   },
+  {
+    productName: 'Fancy Long Sleeve Shirt',
+    price: 34.99,
+    stock: 19,
+    categoryId: 1,
+  },
 ];
 
 const seedProducts = () => Product.bulkCreate(productData);
