@@ -4,6 +4,8 @@
 
 ## Description
 
+This application is the back end of an e-commerce website for an internet retail company, that uses the latest technologies to compete with other e-commerce companies. The application also offers a feature where the user can seed the database with test data, by typing a command on the command line.  When the application is invoked, the server is started, Sequelize models are synced to the MySQL database, and routes are available to perform CRUD operations on every table in the database.  
+
 
 ---
 
@@ -19,9 +21,9 @@
 
 ## Usage
 
-Type `node index.js` in the command line and answer all questions.
+Type `node server.js` in the command line to start server.
 
-[Demo Video](https://drive.google.com/file/d/1x0HVutFBhZ0rnmP7pTWXjYXz0oikfEUm/view)
+[Demo Video](https://drive.google.com/file/d/1HgHTlm9LGfqYbhtCgjW3Lj6FD75W66_A/view)
 
 
 ---

@@ -30,18 +30,16 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-
+/* req.body should look like this for below post request...
+{
+  product_name: "Basketball",  
+  price: 200.00,
+  stock: 3,
+  tagIds: [1, 2, 3, 4]  - 
+}
+*/
 // POST /api/products  - creates a new Product, and creates rows on the ProductTag table for every element in the tagIds input array, 
 router.post('/', async (req, res) => {
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",  
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
-    }
-  */
-
   try {
     // create row on the Product table
     const product = await Product.create(req.body);
