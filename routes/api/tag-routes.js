@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
+}); 
 
 // GET /api/tags/:id  -   gets one Tag for that :id, and it's associated Products
 router.get('/:id', async (req, res) => {
@@ -29,7 +29,6 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 // POST /api/tags  -   creates a new Tag
 router.post('/', async (req, res) => {
